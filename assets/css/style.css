@@ -548,4 +548,21 @@ a {
 .figure {
   position: absolute; }
 
+.split-inner {
+  display: inline-block; }
+
+.liquid-parallax-bg {
+  position: relative; }
+  .liquid-parallax-bg:not(.vc_row):not(.titlebar) {
+    overflow: hidden; }
+
+.liquid-parallax-figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center !important; }
+
 /*# sourceMappingURL=style.css.map */
