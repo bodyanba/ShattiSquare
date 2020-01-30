@@ -28,7 +28,7 @@ $(document).ready(function () {
   Waves.init();
 
 	function navbar() {
-		if ($(this).scrollTop() >= $(window).height()) {
+		if ($(this).scrollTop() >= $(window).height()/2) {
 			$('.page-navbar').addClass("fixed-top navbar-bg");
 		} else {
 			$('.page-navbar').removeClass("fixed-top navbar-bg");
@@ -78,6 +78,18 @@ $(document).ready(function () {
     touchDrag: false,
     // autoplay: true,
 	  smartSpeed: 1,
+	});	
+
+	$('.owl-2').owlCarousel({
+    center: true,
+    items: 1,
+    loop: true,
+    margin: 30,
+    responsive:{
+        600:{
+            items: 2
+				}
+			}
 	});
 
 });

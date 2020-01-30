@@ -678,6 +678,72 @@ a
 				border-top-style: solid
 				border-bottom-style: solid
 				border-left-style: solid
+	&-4
+		height: 252px
+		top: 0
+		.figure
+			&-1
+				width: 85%
+				top: 0
+				right: 29.7%
+				bottom: 130px
+				border-bottom-style: solid
+				border-right-style: solid
+				animation: height-1 linear infinite 10s
+			&-2
+				height: 122px
+				top: 0
+				right: 15%
+				border-right-style: solid
+				animation: height-2 linear infinite 10s
+	&-5
+		top: 0
+		bottom: 0
+		.figure
+			&-1
+				height: 70.4%
+				left: 10%
+				bottom: 0
+				border-right-style: solid
+				animation: height-3 linear infinite 10s
+			&-2
+				height: 70.4%
+				right: 29.7%
+				bottom: 0
+				border-right-style: solid
+				animation: height-3 linear infinite 10s
+			&-3
+				height: 70.4%
+				right: 15%
+				bottom: 0
+				border-right-style: solid
+				animation: height-3 linear infinite 10s
+			&-4
+				width: 15%
+				top: 401px
+				right: 30.2%
+				bottom: 0
+				border-top-style: solid
+				border-left-style: solid
+				animation: height-4 linear infinite 10s
+			&-5
+				width: 15%
+				top: 401px
+				right: 44.8%
+				bottom: 0
+				border-top-style: solid
+				border-left-style: solid
+				animation: height-4 linear infinite 10s
+			&-6
+				width: 15%
+				top: 401px
+				right: 58.5%
+				bottom: 0
+				border-top-style: solid
+				border-left-style: solid
+				animation: height-4 linear infinite 10s
+
+
 
 .split-inner
 	display: inline-block
@@ -698,8 +764,66 @@ a
 
 
 
+.header-1 
+	background-image: url(../img/intercontinental-1.jpg)
+	background-size: cover
+	> .container
+		min-height: 50vh
+		display: flex
+		flex-direction: column
+		padding-top: 65px
+		.my-auto
+			padding-top: 70px
+			padding-bottom: 70px
 
+.h1-1 
+	@media (max-width: 575.98px)
+		font-size: 24px 
 
+.section-4 
+	color: #fff
+	text-align: center
+	position: relative
+	padding-top: 215px
+	padding-bottom: 160px
+	background-color: $color-btn
+	line-height: 2.4
 
+.owl-2
+	margin-bottom: 86px
+	@media (max-width: 991.98px)
+		margin-bottom: 42px
+	&.owl-theme
+		.owl-dots
+			margin-top: 40px !important
+			.owl-dot 
+				span
+					background: $color-btn2
+				&.active, &:hover
+					span
+						background: $color-btn 
+ 
+.figure-inter 
+	color: $color-figure
 
+.z-index-2
+	z-index: 2
 
+@keyframes height-1
+	50%
+		top: 60px
+		width: 66%
+
+@keyframes height-2
+	50%
+		top: 60px
+		height: 62px
+
+@keyframes height-3
+	50%
+		bottom: 70px
+		height: 260px
+
+@keyframes height-4
+	50%
+		bottom: 70px
