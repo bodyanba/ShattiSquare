@@ -11,13 +11,11 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		<link rel="stylesheet" href="../assets/css/style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 	</head>
 	<body>
 
-		<div class="pace-container">
+		<div class="content">
 
 			<nav class="navbar navbar-expand-lg page-navbar">
 				<div class="container-fluid">
@@ -60,46 +58,40 @@
 
 			<main>
 
-				<header class="page-header">
-					<div class="owl-1 owl-carousel owl-theme">
-						<div class="slide">
-							<span class="img" style="background-image: url(../assets/img/slide-1.jpg)"></span>
-							<div class="container">
-								<div class="h1 text-white">Lifestyle. By design.</div>
-								<a href="#!" class="btn btn-brown">Register your interest</a>
+				<header class="page-header" data-parallax="true" data-parallax-options='{"parallaxBG":true}' data-slideshow-bg="true" data-slideshow-options='{ "effect": "scale", "imageArray": ["../assets/img/slide-1.jpg", "../assets/img/slide-2.jpg"] }'>
+					<span class="row-bg-loader"></span>
+					<div class="container">
+						<div data-custom-animations="true" data-ca-options='{ "triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1200", "delay":"150", "easing":"easeOutQuint", "direction":"forward", "initValues":{"translateY":60, "translateZ":-160, "rotateX":-84, "opacity":0}, "animations":{"translateY":0, "translateZ":0, "rotateX":0, "opacity":1} }'>
+							<div class="h1 text-white" data-fittext="true" data-fittext-options='{"compressor":0.675,"maxFontSize":"48","minFontSize":"48"}' data-split-text="true" data-split-options='{ "type": "words" }' data-text-rotator="true">
+								<span class="ld-fh-txt">
+									Lifestyle. By
+									<span class="txt-rotate-keywords">
+										<span class="keyword active">design</span>
+										<span class="keyword">innovation</span>
+										<span class="keyword">quality</span>
+									</span>.
+								</span>
 							</div>
-						</div>
-						<div class="slide">
-							<span class="img" style="background-image: url(../assets/img/slide-2.jpg)"></span>
-							<div class="container">
-								<div class="h1 text-white">Lorem ipsum dolor.</div>
-								<a href="#!" class="btn btn-brown">Register interest</a>
-							</div>
-						</div>
-						<div class="slide">
-							<span class="img" style="background-image: url(../assets/img/slide-1.jpg)"></span>
-							<div class="container">
-								<div class="h1 text-white">Lorem Ipsum Dolor</div>
-								<a href="#!" class="btn btn-brown">Register</a>
-							</div>
+							<a href="#!" class="btn btn-brown">Register your interest</a>
 						</div>
 					</div>
-					<span class="figure-wrap figure-wrap-1">
-						<span class="figure figure-1"></span>
-						<span class="figure figure-2"></span>
-						<span class="figure figure-3"></span>
-						<span class="figure figure-4"></span>
-					</span>
 				</header>
 
 				<section class="section section-1 fz-24">
-					<span class="figure-wrap figure-wrap-2">
-						<span class="figure figure-1"></span>
-						<span class="figure figure-2"></span>
-						<span class="figure figure-3"></span>
-						<span class="figure figure-4"></span>
-						<span class="figure figure-5"></span>
-					</span>
+
+					<div class="iconbox iconbox-1 iconbox-2" data-animate-icon="true" data-plugin-options='{"color":"#966a50","delay":1200}'>
+						<span class="iconbox-icon-container">
+							<svg xmlns="http://www.w3.org/2000/svg" width="378.5" height="149.592" viewBox="0 0 378.5 149.592">
+							  <g transform="translate(-150 -268)">
+							    <path d="M150,304.03h97.063v57.96" stroke-width="3"/>
+							    <path d="M301.526,359.9H416.479" stroke-width="3"/>
+							    <path d="M527,268V417.5" stroke-width="3"/>
+							    <path d="M302.462,268.027v36.047H471.044V416.092H190.91V358.015" stroke-width="3"/>
+							  </g>
+							</svg>
+						</span>
+					</div>
+
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-11 col-xl-9" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":700,"startDelay":"180","delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"translateY":50,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
@@ -107,20 +99,27 @@
 							</div>
 						</div>
 					</div>
-					<span class="figure-wrap figure-wrap-3">
-						<span class="figure figure-1"></span>
-						<span class="figure figure-2"></span>
-						<span class="figure figure-3"></span>
-						<span class="figure figure-4"></span>
-						<span class="figure figure-5"></span>
-						<span class="figure figure-6"></span>
-						<span class="figure figure-7"></span>
-					</span>
+
+					<div class="iconbox iconbox-1 iconbox-3" data-animate-icon="true" data-plugin-options='{"color":"#966a50"}'>
+						<span class="iconbox-icon-container">
+							<svg xmlns="http://www.w3.org/2000/svg" width="378.5" height="115.062" viewBox="0 0 378.5 115.062">
+							  <g transform="translate(106.333 -78)">
+							    <line y2="115" transform="translate(-65.333 78)" stroke-width="3"/>
+							    <line y2="55" transform="translate(102.667 136)" stroke-width="3"/>
+							    <path d="M214.667-59.933V53.562H46.621V-2.555H213.166" transform="translate(0 138)" stroke-width="3"/>
+							    <line y1="56" transform="translate(158.667 135)" stroke-width="3"/>
+							    <line y1="115" transform="translate(270.667 78)" stroke-width="3"/>
+							    <line y1="115" transform="translate(-9.333 78)" stroke-width="3"/>
+							  </g>
+							</svg>
+						</span>
+					</div>
+
 				</section>
 
 				<section class="section section-2 fz-22">
 					<div class="row">
-						<div class="col-md-6" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/img-1.jpg">
+						<div class="col-md-6 waves-effect waves-light" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/img-1.jpg">
 							<img src="../assets/img/img-1.jpg" alt="">
 						</div>
 						<div class="col-md-6" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
@@ -129,7 +128,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/img-2.jpg">
+						<div class="col-md-6 waves-effect waves-light" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/img-2.jpg">
 							<img src="../assets/img/img-2.jpg" alt="">
 						</div>
 						<div class="col-md-6" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
@@ -138,7 +137,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/img-3.jpg">
+						<div class="col-md-6 waves-effect waves-light" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/img-3.jpg">
 							<img src="../assets/img/img-3.jpg" alt="">
 						</div>
 						<div class="col-md-6" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
@@ -185,7 +184,7 @@
 
 			</main>
 
-			<footer class="footer-wrapper">
+			<footer class="footer-wrapper" data-sticky-footer="true">
 				<div class="page-footer">
 					<div class="container">
 						<div class="row">
@@ -262,11 +261,8 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
-		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-		<script src="../assets/libs/enllax.js-master/jquery.enllax.min.js"></script>
 		<script src="../assets/js/theme-vendors.js"></script>
 		<script src="../assets/js/theme.min.js"></script>
 		<script src="../assets/js/common.js"></script>

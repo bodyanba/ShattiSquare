@@ -11,22 +11,6 @@ $(document).ready(function () {
 		};
 	});
 
-	// $(window).enllax();
-
-	$('.jarallax-keep').jarallax({
-		speed: .9,
-		keepImg: true,
-	});
-	$('.jarallax').jarallax({});
-
-	AOS.init({
-		duration: 1000,
-		disable: 'mobile'
-	});
-
-	Waves.attach('.btn, .jarallax-keep, .img-wrap', ['waves-light']);
-  Waves.init();
-
 	function navbar() {
 		if ($(this).scrollTop() >= $(window).height()/2) {
 			$('.page-navbar').addClass("fixed-top navbar-bg");
@@ -37,13 +21,6 @@ $(document).ready(function () {
 	navbar();
 	$(window).on("scroll", navbar);
 
-	function footer() {
-		var height = $(".page-footer").outerHeight();
-		$(".footer-wrapper").outerHeight(height);
-	};
-	footer();
-	$(window).on("resize", footer);
-
 	function easyParallax() {
 		scrollPos = $(this).scrollTop();
 		$('.page-header .container').css({
@@ -51,45 +28,29 @@ $(document).ready(function () {
 			'opacity': 1 - (scrollPos / 250)
 		});
 	};
-	function imgParallax() {
-		scrollPos = $(this).scrollTop();
-		$('.page-header .img').css({
-			'top': (scrollPos / 8) + "px"
-		});
-	};
 	$(window).on("scroll", function() {
 		easyParallax(); 
-		imgParallax();
 	});
+
+	Waves.attach('.btn, .e, .img-wrap', ['waves-light']);
+  Waves.init();
 
 	var dir = false;
 	if ( $("html").attr("dir") == "rtl" ) {
 		dir = true;
 	};
 
-	$('.owl-1').owlCarousel({
-		rtl: dir,
-		animateOut: 'fadeOut',
-    items: 1,
-    nav: false,
-    dots: true,
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    // autoplay: true,
-	  smartSpeed: 1,
-	});	
-
 	$('.owl-2').owlCarousel({
+		rtl: dir,
     center: true,
     items: 1,
     loop: true,
     margin: 30,
-    responsive:{
-        600:{
-            items: 2
-				}
+    responsive: {
+      600: {
+      	items: 2
 			}
+		}
 	});
 
 });

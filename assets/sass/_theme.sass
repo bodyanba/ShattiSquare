@@ -1,0 +1,134 @@
+.row-bg-loader
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-image: url(../img/logo-4.svg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: 75px
+	transition-property: opacity, visibility
+	transition-duration: 0.15s
+	transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)
+.row-bg-appended .row-bg-loader, .slideshow-applied .row-bg-loader
+	opacity: 0
+	visibility: hidden
+
+[data-animate-icon=true] 
+	.iconbox-icon-container > 
+		svg, object
+			opacity: 0
+	&.iconbox-icon-animating 
+		.iconbox-icon-container > 
+			svg, object
+				opacity: 1
+
+.perspective
+	perspective: 1800px
+
+[data-custom-animations=true]
+	visibility: hidden
+	opacity: 0
+.ca-initvalues-applied
+	visibility: visible
+	opacity: 1
+
+.lqd-sticky-footer-sentinel
+	@media (min-width: 1200px)
+		&.height-applied + .footer-stuck
+			position: fixed
+			bottom: 0
+			left: 0
+			right: 0
+			opacity: 0
+			visibility: hidden
+			&.is-inview
+				opacity: 1
+				visibility: visible
+	@media (max-width: 1199.98px)
+		display: none
+
+.ld-slideshow-bg-wrap
+	overflow: hidden
+	opacity: 0
+	visibility: hidden
+	transition: opacity $transition, visibility $transition
+	display: inline-block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+
+.slideshow-applied 
+	.ld-slideshow-bg-wrap
+		opacity: 1
+		visibility: visible
+
+.ld-slideshow-bg-inner, .ld-slideshow-item, .ld-slideshow-figure
+	display: inline-block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+
+.ld-slideshow-bg-inner
+	transform: translateZ(0)
+
+.ld-slideshow-item
+	overflow: hidden
+
+.ld-slideshow-figure
+	background-size: cover
+	background-position: center
+	background-size: cover
+	background-position: center
+	img
+		visibility: hidden
+
+.split-inner
+	display: inline-block
+
+.liquid-parallax-bg
+	position: relative
+	&:not(.vc_row):not(.titlebar)
+		overflow: hidden
+
+.liquid-parallax-figure
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background-size: cover
+	background-position: center !important
+
+.ld-fancy-heading .ld-fh-txt
+	position: relative
+	display: inline-block
+
+.txt-rotate-keywords
+	display: inline-block
+	position: relative
+	transform-style: preserve-3d
+	perspective: 1200px
+	white-space: nowrap
+
+.ws-nowrap
+	white-space: nowrap
+
+.txt-rotate-keywords .keyword
+	display: inline-block
+	position: absolute
+	left: 0
+	top: auto
+	opacity: 0
+	transform: translate3d(0, 0, 0)
+	backface-visibility: hidden
+	&:first-child
+		position: relative
+		top: auto
+		left: auto
+		opacity: 1
