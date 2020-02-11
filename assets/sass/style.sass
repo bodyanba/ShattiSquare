@@ -33,6 +33,10 @@ a
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
 	color: $color-btn
+	.img-link &
+		transition: $transition
+	.img-link:hover &
+		color: $color-link2
 .h1, h1
 	text-transform: uppercase
 	letter-spacing: 2.88px
@@ -86,7 +90,7 @@ a
 		color: #fff !important
 		background-color: $color-btn
 		&:hover
-			background-color: $color-body
+			background-color: $color-link
 	&-arrow 
 		width: 45px
 		height: 45px
@@ -105,11 +109,13 @@ a
 		&:after
 			transform: rotate(-50deg) 
 		&:hover 
-			background-color: $color-link
 			&:before
 				transform: rotate(45deg)
 			&:after
 				transform: rotate(-45deg) 
+
+.img-link
+	display: block
 
 .content
 	overflow: hidden
@@ -395,6 +401,9 @@ a
 			flex-direction: row-reverse
 			* 
 				color: inherit !important
+			.img-link:hover
+				h2
+					opacity: .5
 		> [class*='col']
 			padding: 0
 			&:last-child
@@ -460,6 +469,7 @@ a
 		border-top: 2px solid
 		display: inline-block
 	&:hover
+		color: $color-link2
 		&:before 
 			animation: hoverLink 0.3s
 
