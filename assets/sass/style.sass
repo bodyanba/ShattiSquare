@@ -489,16 +489,6 @@ a
 	line-height: 1.25
 	background-color: $color-body
 
-
-
-
-
-
-
-
-
-
-
 .figure 
 	border-width: 13px
 	color: $color-btn
@@ -691,80 +681,13 @@ a
 		bottom: -70px
 
 
-
-
-
-
-
-.figure-wrap	
-	&-4
-		height: 252px
-		top: 0
-		.figure
-			&-1
-				width: 85%
-				top: 0
-				right: 29.7%
-				bottom: 130px
-				border-bottom-style: solid
-				border-right-style: solid
-				animation: height-1 linear infinite 10s
-			&-2
-				height: 122px
-				top: 0
-				right: 15%
-				border-right-style: solid
-				animation: height-2 linear infinite 10s
-	&-5
-		top: 0
-		bottom: 0
-		.figure
-			&-1
-				height: 70.4%
-				left: 10%
-				bottom: 0
-				border-right-style: solid
-				animation: height-3 linear infinite 10s
-			&-2
-				height: 70.4%
-				right: 29.7%
-				bottom: 0
-				border-right-style: solid
-				animation: height-3 linear infinite 10s
-			&-3
-				height: 70.4%
-				right: 15%
-				bottom: 0
-				border-right-style: solid
-				animation: height-3 linear infinite 10s
-			&-4
-				width: 15%
-				top: 401px
-				right: 30.2%
-				bottom: 0
-				border-top-style: solid
-				border-left-style: solid
-				animation: height-4 linear infinite 10s
-			&-5
-				width: 15%
-				top: 401px
-				right: 44.8%
-				bottom: 0
-				border-top-style: solid
-				border-left-style: solid
-				animation: height-4 linear infinite 10s
-			&-6
-				width: 15%
-				top: 401px
-				right: 58.5%
-				bottom: 0
-				border-top-style: solid
-				border-left-style: solid
-				animation: height-4 linear infinite 10s
-
+// intercontinental
+		
 .header-1 
-	background-image: url(../img/intercontinental-1.jpg)
+	background-image: url(../img/header-intercontinental.jpg)
 	background-size: cover
+	height: auto
+	box-shadow: none
 	> .container
 		min-height: 50vh
 		display: flex
@@ -782,15 +705,127 @@ a
 	color: #fff
 	text-align: center
 	position: relative
-	padding-top: 215px
+	padding-top: 154px
 	padding-bottom: 160px
-	background-color: $color-btn
-	line-height: 2.4
+	background-color: #7ba6ad
+	line-height: 1.5
+	text-transform: uppercase
+	margin-top: -60px
+	@media (max-width: 767.98px)
+		padding-top: 70px
+		padding-bottom: 70px
+
+.gray
+	background-color: #f4f0ed
+
+.o-hidden 
+	overflow: hidden
+
+.figure-inter 
+	color: #87adb3
+
+.z-index-2
+	z-index: 2
+
+.figure-wrap	
+	&-4
+		top: 0
+		bottom: 0
+		.figure
+			border-width: 7px
+			&-1
+				width: 24.8%
+				height: 73%
+				left: 18.5%
+				top: 27%
+				border-top-style: solid
+				border-right-style: solid
+				animation-name: height-1
+				animation-duration: 3s
+			&-2
+				height: 18%
+				left: 18.5%
+				bottom: 72%
+				border-right-style: solid
+				animation-name: height-2
+				animation-duration: 3s
+			&-3
+				width: 31.8%
+				right: 57%
+				bottom: 18%
+				border-top-style: solid
+				animation-name: height-3
+				animation-duration: 3s
+			&-4
+				width: 18%
+				left: 18.5%
+				bottom: 45%
+				border-top-style: solid				
+			&-5
+				height: 90%
+				left: 51%
+				bottom: 0
+				top: 11%
+				border-right-style: solid
+				animation-name: height-4
+				animation-duration: 3s
+			&-6
+				height: 24%
+				left: 62%
+				top: 76%
+				border-right-style: solid
+				animation-name: height-5
+				animation-duration: 3s
+			&-7
+				width: 14%
+				height: 28%
+				right: 30%
+				bottom: 21%
+				border-top-style: solid
+				border-right-style: solid
+			&-8
+				width: 10%
+				height: 19%
+				left: 78%
+				bottom: 47%
+				border-bottom-style: solid
+				border-left-style: solid
+				animation-name: height-6
+				animation-duration: 3s
+			&-9
+				width: 10%
+				left: 78%
+				bottom: 21%
+				border-top-style: solid	
+				animation-name: height-6
+				animation-duration: 3s	
+
+@keyframes height-1
+	50%
+		height: 60%
+
+@keyframes height-2
+	50%
+		height: 7%
+
+@keyframes height-3
+	50%
+		width: 24.5%
+
+@keyframes height-4
+	50%
+		top: 20%
+		height: 67%
+
+@keyframes height-5
+	50%
+		height: 12%
+
+@keyframes height-6
+	50%
+		width: 3%
 
 .owl-2
-	margin-bottom: 86px
-	@media (max-width: 991.98px)
-		margin-bottom: 42px
 	&.owl-theme
 		.owl-dots
 			margin-top: 40px !important
@@ -801,29 +836,113 @@ a
 					span
 						background: $color-btn 
  
-.figure-inter 
-	color: $color-figure
-
-.z-index-2
-	z-index: 2
-
-@keyframes height-1
-	50%
-		top: 60px
-		width: 66%
-
-@keyframes height-2
-	50%
-		top: 60px
-		height: 62px
-
-@keyframes height-3
-	50%
-		bottom: 70px
-		height: 260px
-
-@keyframes height-4
-	50%
-		bottom: 70px
+.btn-maroon 
+	padding: 15.5px 22px 
+	color: #fff
+	background: #cda1a6
 
 @import theme
+
+
+// register
+
+.fz-14
+	font-size: 14px
+
+.header-2
+	background-image: url(../img/intercontinental-1.jpg)
+	padding-bottom: 16px
+	> .container
+		min-height: auto
+		padding-top: 42px
+
+.section-5
+	padding-top: 84px
+	background-color: #fff
+	@media (max-width: 991.98px)
+		padding-top: 42px
+
+.form-group
+	border: 1px solid $color-btn2
+	&.form-group-1
+		margin-bottom: 28px
+
+.form-control
+	&::-webkit-input-placeholder
+		color: $color-body
+	&::-moz-placeholder
+		color: $color-body
+	&:-ms-input-placeholder
+		color: $color-body
+
+select 
+	display: block !important
+	&.form-control
+		border: 1px solid $color-btn2
+		padding-top: 14.5px
+		color: $color-body
+		padding-bottom: 14.5px
+		-webkit-appearance: none
+		-moz-appearance: none
+		background-image: url(../img/arrow-select.png)
+		background-position: calc(100% - 15px) 50%
+		background-repeat: no-repeat
+		background-size: 9px
+		@media (max-width: 991.98px)
+			margin-bottom: 28px
+		&:focus
+			border: 1px solid $color-btn2 
+		option 
+			color: $color-body
+
+textarea 
+	min-height: 200px
+
+.radio-group 
+	display: block
+	text-align: center
+	span
+		display: block
+		color: $color-btn
+		padding: 14.5px 12px !important
+		border: 2px solid $color-btn
+		padding: 5px
+		transition: 0.3s
+		cursor: pointer
+		&:hover
+			color: #000
+	input
+		display: none
+		&:checked ~ span
+			background: $color-btn
+			color: #fff
+
+
+// residences
+
+.section-6
+	background: #b9c2b8
+
+.figure-residences
+	color: #bfc7bd
+
+.fz-48
+	font-size: 48px
+	@media (max-width: 991.98px)
+		font-size: 24px
+
+.lh-1
+	line-height: 1
+
+
+// stories
+
+.btn-white
+	padding: 20.5px 36px 
+	color: #fff
+	border: 2px solid #fff
+	border-color: #fff
+	background: transparent
+
+.pt-80
+	padding-top: 80px
