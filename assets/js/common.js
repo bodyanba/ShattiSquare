@@ -40,12 +40,13 @@ $(document).ready(function () {
 		dir = true;
 	};
 
-	$('.owl-2').owlCarousel({
+	$('.owl-1').owlCarousel({
 		rtl: dir,
     center: true,
     items: 1,
     loop: true,
     margin: 30,
+    autoplay: true,
     responsive: {
       600: {
       	items: 2

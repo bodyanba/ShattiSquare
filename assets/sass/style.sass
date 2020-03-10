@@ -10,6 +10,7 @@ body
 	color: $color-body
 
 main
+	background-color: $color-bg
 	position: relative
 	z-index: 2
 
@@ -38,6 +39,7 @@ a
 	.img-link:hover &
 		color: $color-hover
 .h1, h1
+	font-size: 2.5rem !important
 	text-transform: uppercase
 	letter-spacing: 2.88px
 	margin-bottom: 33px
@@ -55,6 +57,10 @@ a
 	@media (max-width: 991.98px)
 		font-size: 1.25rem
 
+.fz-48
+	font-size: 48px !important
+	@media (max-width: 991.98px)
+		font-size: 24px !important
 .fz-24
 	@media (min-width: 992px)
 		font-size: 20px
@@ -73,9 +79,14 @@ a
 
 .lh-175
 	line-height: 1.75
+.lh-11
+	line-height: 1.1
 
 .ls-52
 	letter-spacing: 5.2px
+
+.pt-80
+	padding-top: 80px
 
 .btn
 	border: none
@@ -91,6 +102,19 @@ a
 		background-color: $color-btn
 		&:hover
 			background-color: $color-link
+	&-maroon 
+		color: #fff !important
+		padding: 15.5px 22px
+		background-color: #cda1a6
+		&:hover
+			background-color: $color-link
+	&-white
+		color: #fff !important
+		padding: 20.5px 36px
+		border: 2px solid #fff
+		background-color: transparent
+		&:hover
+			opacity: .6 !important
 	&-arrow 
 		width: 45px
 		height: 45px
@@ -188,8 +212,10 @@ a
 			color: $color-hover
 		@media (min-width: 992px)
 			color: #fff
-			&:hover 
+			&:hover, &.active
 				color: $color-hover
+			&.active
+				pointer-events: none
 	.navbar-toggler
 		color: #fff !important
 	.nav-link
@@ -209,7 +235,7 @@ a
 					opacity: 1
 		a 
 			color: $color-btn
-			&:hover 
+			&:hover, &.active
 				color: $color-hover
 		.navbar-toggler
 			color: $color-btn !important
@@ -350,6 +376,7 @@ a
 	box-shadow: -8.7px 5px 15px 0 rgba(0, 0, 0, .35)
 	.container 
 		position: relative
+		padding-top: 65px
 
 .section-1
 	padding-top: 1px
@@ -395,6 +422,8 @@ a
 	.row
 		align-items: center
 		margin: 0
+		&:nth-child(odd)
+			background-color: #fff
 		&:nth-child(even)
 			color: #fff	
 			background-color: $color-btn
@@ -437,7 +466,6 @@ a
 .section-3
 	padding-top: 161px
 	padding-bottom: 102px
-	background-color: $color-bg
 	@media (max-width: 991.98px)
 		padding-top: 90px
 		padding-bottom: 42px
@@ -503,7 +531,6 @@ a
 	width: 1500px
 	right: 50%
 	transform: translate(50%)
-	z-index: 1
 	&-1
 		top: 0
 		bottom: 0
@@ -684,48 +711,47 @@ a
 // intercontinental
 		
 .header-1 
-	background-image: url(../img/header-intercontinental.jpg)
-	background-size: cover
-	height: auto
 	box-shadow: none
-	> .container
-		min-height: 50vh
-		display: flex
-		flex-direction: column
-		padding-top: 65px
-		.my-auto
-			padding-top: 70px
-			padding-bottom: 70px
+	height: 66vh
+	.container
+		padding-top: 31px
+
+.header-2
+	box-shadow: none
+	@media (min-width: 576px)
+		height: 66vh
 
 .h1-1 
 	@media (max-width: 575.98px)
-		font-size: 24px 
+		font-size: 23px !important
+		line-height: inherit
 
-.section-4 
+.section-4
+	padding-bottom: 102px
+	@media (max-width: 991.98px)
+		padding-bottom: 90px
+
+.block
 	color: #fff
-	text-align: center
 	position: relative
-	padding-top: 154px
-	padding-bottom: 160px
-	background-color: #7ba6ad
-	line-height: 1.5
+	padding: 154px 15px
 	text-transform: uppercase
-	margin-top: -60px
+	margin-top: -66px
+	margin-bottom: 30px
+	overflow: hidden
 	@media (max-width: 767.98px)
 		padding-top: 70px
 		padding-bottom: 70px
 
-.gray
-	background-color: #f4f0ed
-
-.o-hidden 
-	overflow: hidden
+.bg-1
+	background-color: #7ba6ad
+.bg-2
+	background: #b9c2b8
 
 .figure-inter 
 	color: #87adb3
-
-.z-index-2
-	z-index: 2
+.figure-residences
+	color: #bfc7bd
 
 .figure-wrap	
 	&-4
@@ -825,31 +851,24 @@ a
 	50%
 		width: 3%
 
-.owl-2
+.owl-1
 	&.owl-theme
 		.owl-dots
-			margin-top: 40px !important
+			margin-top: 42px !important
 			.owl-dot 
 				span
 					background: $color-btn2
+					transition: $transition
 				&.active, &:hover
 					span
-						background: $color-btn 
- 
-.btn-maroon 
-	padding: 15.5px 22px 
-	color: #fff
-	background: #cda1a6
-
-@import theme
-
+						background: $color-btn
 
 // register
 
 .fz-14
 	font-size: 14px
 
-.header-2
+.header-3
 	background-image: url(../img/intercontinental-1.jpg)
 	padding-bottom: 16px
 	> .container
@@ -875,27 +894,26 @@ a
 	&:-ms-input-placeholder
 		color: $color-body
 
-select 
+select.form-control
 	display: block !important
-	&.form-control
+	border: 1px solid $color-btn2
+	padding-top: 14.5px
+	color: $color-body
+	padding-bottom: 14.5px
+	-moz-appearance: none
+	-ms-appearance: none
+	-webkit-appearance: none
+	appearance: none
+	background-image: url(../img/arrow-select.png)
+	background-position: calc(100% - 15px) 50%
+	background-repeat: no-repeat
+	background-size: 9px
+	@media (max-width: 991.98px)
+		margin-bottom: 28px
+	&:focus
 		border: 1px solid $color-btn2
-		padding-top: 14.5px
-		color: $color-body
-		padding-bottom: 14.5px
-		-webkit-appearance: none
-		-moz-appearance: none
-		background-image: url(../img/arrow-select.png)
-		background-position: calc(100% - 15px) 50%
-		background-repeat: no-repeat
-		background-size: 9px
-		@media (max-width: 991.98px)
-			margin-bottom: 28px
-		&:focus
-			border: 1px solid $color-btn2 
-		option 
-			color: $color-body
 
-textarea 
+textarea.form-control 
 	min-height: 200px
 
 .radio-group 
@@ -917,33 +935,6 @@ textarea
 			background: $color-btn
 			color: #fff
 
+@import theme
 
-// residences
-
-.section-6
-	background: #b9c2b8
-
-.figure-residences
-	color: #bfc7bd
-
-.fz-48
-	font-size: 48px
-	@media (max-width: 991.98px)
-		font-size: 24px
-
-.lh-1
-	line-height: 1
-
-
-// stories
-
-.btn-white
-	padding: 20.5px 36px 
-	color: #fff
-	border: 2px solid #fff
-	border-color: #fff
-	background: transparent
-
-.pt-80
-	padding-top: 80px
 
