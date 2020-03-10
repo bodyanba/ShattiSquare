@@ -147,10 +147,22 @@ a
 .form-control 
 	border: 0
 	border-radius: 0
-	padding: 22.5px 13px
+	height: auto
+	padding: 13px 
+	padding-left: 24px
 	color: $color-body
 	font-size: inherit
-	box-shadow: none !important
+	background: transparent
+	&::-webkit-input-placeholder
+		color: $color-body
+	&::-moz-placeholder
+		color: $color-body
+	&:-ms-input-placeholder
+		color: $color-body
+	&:focus
+		background: transparent
+		box-shadow: 0 0 0 0.2rem rgba(150,106,80,.25)
+
 
 .row-1
 	margin-left: -2.5px
@@ -863,21 +875,21 @@ a
 					span
 						background: $color-btn
 
+
 // register
 
-.fz-14
-	font-size: 14px
-
 .header-3
-	background-image: url(../img/intercontinental-1.jpg)
+	height: 40vh
 	padding-bottom: 16px
-	> .container
+	.container
 		min-height: auto
 		padding-top: 42px
+		@media (max-width: 767.98px)
+			padding-top: 20px
 
 .section-5
 	padding-top: 84px
-	background-color: #fff
+	font-size: 14px
 	@media (max-width: 991.98px)
 		padding-top: 42px
 
@@ -886,20 +898,10 @@ a
 	&.form-group-1
 		margin-bottom: 28px
 
-.form-control
-	&::-webkit-input-placeholder
-		color: $color-body
-	&::-moz-placeholder
-		color: $color-body
-	&:-ms-input-placeholder
-		color: $color-body
-
 select.form-control
 	display: block !important
 	border: 1px solid $color-btn2
-	padding-top: 14.5px
-	color: $color-body
-	padding-bottom: 14.5px
+	padding-right: 36px
 	-moz-appearance: none
 	-ms-appearance: none
 	-webkit-appearance: none
@@ -914,26 +916,30 @@ select.form-control
 		border: 1px solid $color-btn2
 
 textarea.form-control 
-	min-height: 200px
+	min-height: 150px
 
 .radio-group 
 	display: block
 	text-align: center
 	span
 		display: block
+		min-width: 182px
 		color: $color-btn
-		padding: 14.5px 12px !important
+		padding: 12px !important
 		border: 2px solid $color-btn
-		padding: 5px
 		transition: 0.3s
 		cursor: pointer
 		&:hover
-			color: #000
+			background: $color-link
+			border-color: $color-link
 	input
 		display: none
 		&:checked ~ span
 			background: $color-btn
 			color: #fff
+
+.mw-50
+	min-width: 50px !important
 
 @import theme
 

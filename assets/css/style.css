@@ -165,10 +165,21 @@ a {
 .form-control {
   border: 0;
   border-radius: 0;
-  padding: 22.5px 13px;
+  height: auto;
+  padding: 13px;
+  padding-left: 24px;
   color: #554645;
   font-size: inherit;
-  box-shadow: none !important; }
+  background: transparent; }
+  .form-control::-webkit-input-placeholder {
+    color: #554645; }
+  .form-control::-moz-placeholder {
+    color: #554645; }
+  .form-control:-ms-input-placeholder {
+    color: #554645; }
+  .form-control:focus {
+    background: transparent;
+    box-shadow: 0 0 0 0.2rem rgba(150, 106, 80, 0.25); }
 
 .row-1 {
   margin-left: -2.5px;
@@ -870,19 +881,19 @@ a {
   .owl-1.owl-theme .owl-dots .owl-dot.active span, .owl-1.owl-theme .owl-dots .owl-dot:hover span {
     background: #966a50; }
 
-.fz-14 {
-  font-size: 14px; }
-
 .header-3 {
-  background-image: url(../img/intercontinental-1.jpg);
+  height: 40vh;
   padding-bottom: 16px; }
-  .header-3 > .container {
+  .header-3 .container {
     min-height: auto;
     padding-top: 42px; }
+    @media (max-width: 767.98px) {
+      .header-3 .container {
+        padding-top: 20px; } }
 
 .section-5 {
   padding-top: 84px;
-  background-color: #fff; }
+  font-size: 14px; }
   @media (max-width: 991.98px) {
     .section-5 {
       padding-top: 42px; } }
@@ -892,19 +903,10 @@ a {
   .form-group.form-group-1 {
     margin-bottom: 28px; }
 
-.form-control::-webkit-input-placeholder {
-  color: #554645; }
-.form-control::-moz-placeholder {
-  color: #554645; }
-.form-control:-ms-input-placeholder {
-  color: #554645; }
-
 select.form-control {
   display: block !important;
   border: 1px solid #c4ac9e;
-  padding-top: 14.5px;
-  color: #554645;
-  padding-bottom: 14.5px;
+  padding-right: 36px;
   -moz-appearance: none;
   -ms-appearance: none;
   -webkit-appearance: none;
@@ -920,26 +922,30 @@ select.form-control {
     border: 1px solid #c4ac9e; }
 
 textarea.form-control {
-  min-height: 200px; }
+  min-height: 150px; }
 
 .radio-group {
   display: block;
   text-align: center; }
   .radio-group span {
     display: block;
+    min-width: 182px;
     color: #966a50;
-    padding: 14.5px 12px !important;
+    padding: 12px !important;
     border: 2px solid #966a50;
-    padding: 5px;
     transition: 0.3s;
     cursor: pointer; }
     .radio-group span:hover {
-      color: #000; }
+      background: #d3b5a0;
+      border-color: #d3b5a0; }
   .radio-group input {
     display: none; }
     .radio-group input:checked ~ span {
       background: #966a50;
       color: #fff; }
+
+.mw-50 {
+  min-width: 50px !important; }
 
 .row-bg-loader {
   position: absolute;

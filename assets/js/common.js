@@ -32,7 +32,7 @@ $(document).ready(function () {
 		easyParallax(); 
 	});
 
-	Waves.attach('.btn, .e, .img-wrap', ['waves-light']);
+	Waves.attach('.btn, .e, .img-wrap, .radio-group span', ['waves-light']);
   Waves.init();
 
 	var dir = false;
