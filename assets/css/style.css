@@ -8,6 +8,11 @@
 .text-gray {
   color: rgba(85, 70, 69, 0.5) !important; }
 
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../fonts/times-new-roman-corsivo.ttf");
+  font-weight: normal;
+  font-style: italic; }
 * {
   outline: none !important; }
 
@@ -26,6 +31,9 @@ img {
 
 hr {
   border-top-color: #966a50; }
+
+.hr {
+  border-top-color: #c3bcba; }
 
 a {
   color: #d3b5a0;
@@ -74,6 +82,15 @@ a {
     .fz-48 {
       font-size: 24px !important; } }
 
+.fz-36 {
+  font-size: 36px !important; }
+  @media (max-width: 1199.98px) {
+    .fz-36 {
+      font-size: 33px !important; } }
+  @media (max-width: 575.98px) {
+    .fz-36 {
+      font-size: 25px !important; } }
+
 @media (min-width: 992px) {
   .fz-24 {
     font-size: 20px; } }
@@ -103,6 +120,9 @@ a {
 
 .ls-52 {
   letter-spacing: 5.2px; }
+
+.ls-25 {
+  letter-spacing: 2.5px; }
 
 .pt-80 {
   padding-top: 80px; }
@@ -556,10 +576,16 @@ a {
   padding-bottom: 20px;
   line-height: 1.25;
   background-color: #554645; }
+  .page-footer .form-control {
+    background: #f4f0ed;
+    padding-left: 13px; }
+    .page-footer .form-control:focus {
+      background: #fff;
+      box-shadow: none; }
 
 .figure {
   border-width: 13px;
-  color: #966a50;
+  color: #f3efec;
   position: absolute;
   pointer-events: none;
   animation-timing-function: linear;
@@ -751,6 +777,15 @@ a {
     font-size: 23px !important;
     line-height: inherit; } }
 
+@media (max-width: 991.98px) {
+  .h1-2 {
+    font-size: 20px !important;
+    line-height: inherit; } }
+@media (max-width: 575.98px) {
+  .h1-2 {
+    font-size: 14px !important;
+    line-height: inherit; } }
+
 .section-4 {
   padding-bottom: 102px; }
   @media (max-width: 991.98px) {
@@ -881,6 +916,37 @@ a {
   .owl-1.owl-theme .owl-dots .owl-dot.active span, .owl-1.owl-theme .owl-dots .owl-dot:hover span {
     background: #966a50; }
 
+.owl-2 {
+  margin-top: -90px; }
+  .owl-2.owl-theme .owl-dots {
+    margin-top: 42px !important; }
+    .owl-2.owl-theme .owl-dots .owl-dot span {
+      background: #c4ac9e;
+      transition: 0.3s; }
+    .owl-2.owl-theme .owl-dots .owl-dot.active span, .owl-2.owl-theme .owl-dots .owl-dot:hover span {
+      background: #966a50; }
+  .owl-2:after {
+    content: "LIFESTYLE BY DESIGN";
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    right: -20%;
+    font-size: 120px;
+    color: #966a50;
+    pointer-events: none; }
+    @media (max-width: 1199.98px) {
+      .owl-2:after {
+        font-size: 90px; } }
+    @media (max-width: 991.98px) {
+      .owl-2:after {
+        font-size: 68px; } }
+    @media (max-width: 767.98px) {
+      .owl-2:after {
+        font-size: 50px; } }
+    @media (max-width: 575.98px) {
+      .owl-2:after {
+        font-size: 28px; } }
+
 .header-3 {
   height: 40vh;
   padding-bottom: 16px; }
@@ -946,6 +1012,64 @@ textarea.form-control {
 
 .mw-50 {
   min-width: 50px !important; }
+
+.section-6 {
+  padding-top: 215px;
+  padding-bottom: 120px; }
+  @media (max-width: 991.98px) {
+    .section-6 {
+      padding-top: 70px;
+      padding-bottom: 50px; } }
+
+.web-story-1, .web-story-2 {
+  position: relative;
+  transition: 0.3s; }
+  .web-story-1:before, .web-story-2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 105%;
+    width: 20px;
+    height: 17px;
+    background-image: url(../img/arrow-left-right.png);
+    background-size: cover; }
+    @media (max-width: 767.98px) {
+      .web-story-1:before, .web-story-2:before {
+        right: 20%; } }
+  .web-story-1:hover, .web-story-2:hover {
+    opacity: 0.6;
+    transform: translateX(-5%); }
+
+.web-story-2:before {
+  left: 105%;
+  transform: translateY(-50%) rotate(180deg); }
+  @media (max-width: 767.98px) {
+    .web-story-2:before {
+      left: 20%; } }
+.web-story-2:hover {
+  transform: translateX(5%); }
+
+.mh-260 {
+  min-height: 260px !important; }
+
+.section-7 .row > [class*='col']:last-child {
+  padding: 30px 6% 30px 5%; }
+@media (max-width: 1299.98px) {
+  .section-7 .row h2 {
+    font-size: 30px; }
+  .section-7 .row p {
+    font-size: 14px; } }
+
+.poem {
+  font-family: "Times New Roman", sans-serif;
+  background: #554645;
+  color: #f4f0ed;
+  padding: 100px 15px;
+  margin-bottom: 126px; }
+  @media (max-width: 575.98px) {
+    .poem {
+      margin-bottom: 90px; } }
 
 .row-bg-loader {
   position: absolute;

@@ -20,6 +20,8 @@ img
 
 hr 
 	border-top-color: $color-btn
+.hr 
+	border-top-color: #c3bcba
 
 a 
 	color: $color-link
@@ -61,6 +63,12 @@ a
 	font-size: 48px !important
 	@media (max-width: 991.98px)
 		font-size: 24px !important
+.fz-36
+	font-size: 36px !important
+	@media (max-width: 1199.98px)
+		font-size: 33px !important
+	@media (max-width: 575.98px)
+		font-size: 25px !important
 .fz-24
 	@media (min-width: 992px)
 		font-size: 20px
@@ -84,6 +92,8 @@ a
 
 .ls-52
 	letter-spacing: 5.2px
+.ls-25
+	letter-spacing: 2.5px
 
 .pt-80
 	padding-top: 80px
@@ -162,7 +172,6 @@ a
 	&:focus
 		background: transparent
 		box-shadow: 0 0 0 0.2rem rgba(150,106,80,.25)
-
 
 .row-1
 	margin-left: -2.5px
@@ -528,10 +537,16 @@ a
 	padding-bottom: 20px
 	line-height: 1.25
 	background-color: $color-body
+	.form-control 
+		background: $color-bg
+		padding-left: 13px
+		&:focus
+			background: #fff
+			box-shadow: none
 
 .figure 
 	border-width: 13px
-	color: $color-btn
+	color: #f3efec
 	position: absolute
 	pointer-events: none
 	animation-timing-function: linear 
@@ -737,6 +752,13 @@ a
 	@media (max-width: 575.98px)
 		font-size: 23px !important
 		line-height: inherit
+.h1-2
+	@media (max-width: 991.98px)
+		font-size: 20px !important
+		line-height: inherit
+	@media (max-width: 575.98px)
+		font-size: 14px !important
+		line-height: inherit
 
 .section-4
 	padding-bottom: 102px
@@ -875,6 +897,36 @@ a
 					span
 						background: $color-btn
 
+.owl-2
+	margin-top: -90px
+	&.owl-theme
+		.owl-dots
+			margin-top: 42px !important
+			.owl-dot 
+				span
+					background: $color-btn2
+					transition: $transition
+				&.active, &:hover
+					span
+						background: $color-btn
+	&:after 
+		content: 'LIFESTYLE BY DESIGN'
+		position: absolute
+		top: 50%
+		left: -20%
+		right: -20%
+		font-size: 120px 
+		color: $color-btn
+		pointer-events: none
+		@media (max-width: 1199.98px)
+			font-size: 90px 
+		@media (max-width: 991.98px)
+			font-size: 68px 
+		@media (max-width: 767.98px)
+			font-size: 50px 
+		@media (max-width: 575.98px)
+			font-size: 28px 
+
 
 // register
 
@@ -927,7 +979,7 @@ textarea.form-control
 		color: $color-btn
 		padding: 12px !important
 		border: 2px solid $color-btn
-		transition: 0.3s
+		transition: $transition
 		cursor: pointer
 		&:hover
 			background: $color-link
@@ -941,6 +993,68 @@ textarea.form-control
 .mw-50
 	min-width: 50px !important
 
+
+// web-story
+
+.section-6
+	padding-top: 215px
+	padding-bottom: 120px
+	@media (max-width: 991.98px)
+		padding-top: 70px
+		padding-bottom: 50px
+
+.web-story-1, .web-story-2
+	position: relative
+	transition: $transition
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 105%
+		width: 20px
+		height: 17px
+		background-image: url(../img/arrow-left-right.png)
+		background-size: cover
+		@media (max-width: 767.98px)
+			right: 20%
+	&:hover
+		opacity: .6
+		transform: translateX(-5%)
+
+.web-story-2
+	&:before
+		left: 105%
+		transform: translateY(-50%) rotate(180deg)
+		@media (max-width: 767.98px)
+			left: 20%
+	&:hover
+		transform: translateX(5%) 
+
+.mh-260
+	min-height: 260px !important
+
+
+// sharri-life
+
+.section-7
+	.row
+		> [class*='col']
+			&:last-child
+				padding: 30px 6% 30px 5%
+		@media (max-width: 1299.98px)
+			h2 
+				font-size: 30px
+			p 
+				font-size: 14px
+
+.poem 
+	font-family: 'Times New Roman', sans-serif
+	background: $color-body
+	color: $color-bg
+	padding: 100px 15px
+	margin-bottom: 126px
+	@media (max-width: 575.98px)
+		margin-bottom: 90px
+
 @import theme
-
-

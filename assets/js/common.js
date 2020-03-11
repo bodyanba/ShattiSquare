@@ -54,4 +54,17 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.owl-2').owlCarousel({
+		rtl: dir,
+    items: 1,
+    loop: true,
+    margin: 30,
+    autoplay: true,
+    responsive: {
+      600: {
+      	items: 1
+			}
+		}
+	});
+
 });
