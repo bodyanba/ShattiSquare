@@ -15,9 +15,9 @@
 	</head>
 	<body>
 
-		<div class="content">
+		<div class="content no-scroll">
 
-			<nav class="navbar navbar-expand-lg page-navbar">
+			<nav class="navbar navbar-expand-lg page-navbar fixed-top navbar-bg">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="index.html">
 						<img src="../assets/img/logo-white.svg" alt="" width="240">
@@ -59,12 +59,12 @@
 					<div class="container">
 						<div class="bg-2 text-white mb-4">
 							<div class="row no-gutters">
-								<div class="col-lg-6">
+								<div class="col-lg-6 waves-effect waves-light" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/web-story1.jpg">
 									<img src="../assets/img/web-story1.jpg" alt="">
-								</div> 
-								<div class="col-lg-6">
-									<div class="p-4 p-xl-5 mh-260">
-										<div class="fz-36 lh-11 font-weight-bold pb-4">Shatti Square launches Muscats most exclusive residences</div>
+								</div>
+								<div class="col-lg-6 px-3 px-sm-4 py-4 p-xl-5" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+									<div class="fz-36 lh-11 font-weight-bold pb-4">Shatti Square launches Muscats most exclusive residences</div>
+									<div>
 										<div class="row fz-12">
 											<div class="col-6 col-sm-4">
 												<div class="text-uppercase">A U T H O R</div>
@@ -79,27 +79,39 @@
 								</div>
 							</div>
 						</div>
-						<div class="row d-flex justify-content-center py-4 py-lg-5 mb-3">
-							<div class="col-lg-7 lh-175">
+						<div class="row justify-content-center py-4 py-lg-5 mb-3">
+							<div class="col-lg-7 lh-175" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":30,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
 								<div class="fz-24 font-weight-bold mb-4">Thuraya Residences stun buyers</div>
 								<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur.</p>
 								<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
 							</div>
 						</div>
-						<img src="../assets/img/web-story2.jpg" alt="" class="pb-4 pb-lg-5">
+						<div class="mb-4 mb-lg-5 waves-effect waves-light" data-parallax="true" data-parallax-options='{"parallaxBG": true}' style="background-image: url(../assets/img/web-story2.jpg">
+							<img src="../assets/img/web-story2.jpg" alt="">
+						</div>
 						<hr class="hr">
-						<div class="row d-flex justify-content-center pt-4">
-							<div class="col-5 col-lg-4 col-xl-3">
-								<div class="fz-12 text-uppercase ls-25 d-none d-md-block">PREVIOUS STORY</div>
-								<a href="#!">
-									<div class="fz-18 text-btn web-story-1"><span class="d-none d-md-block">The new Jabrin Ballroom hosts its first wedding</span></div>
-								</a>
-							</div>
-							<div class="col-5 col-lg-4 col-xl-3 text-right">
-								<div class="fz-12 text-uppercase ls-25 d-none d-md-block">NEXT STORY</div>
-								<a href="#!">
-									<div class="fz-18 text-btn web-story-1 web-story-2"><span class="d-none d-md-block">Omani artists flock to Shatti Sqaure in new exhibition</span></div>
-								</a>
+						<div class="row justify-content-center pt-4">
+							<div class="col-lg-10 col-xl-8">
+								<div class="row justify-content-between">
+									<div class="col-6 col-lg-5">
+										<div class="fz-12 text-uppercase ls-25 ml-30 d-none d-md-block">PREVIOUS STORY</div>
+										<a href="#!" class="web-story-1 form-row align-items-center text-btn fz-18">
+											<div class="col-md-auto">
+												<img src="../assets/img/arrow-left-right.png" alt="" width="20">
+											</div>
+											<div class="col d-none d-md-block">The new Jabrin Ballroom hosts its first wedding</div>
+										</a>
+									</div>
+									<div class="col-6 col-lg-5 text-right">
+										<div class="fz-12 text-uppercase ls-25 mr-30 d-none d-md-block">PREVIOUS STORY</div>
+										<a href="#!" class="web-story-2 form-row align-items-center text-btn fz-18">
+											<div class="col d-none d-md-block">Omani artists flock to Shatti Sqaure in new exhibition</div>
+											<div class="col-md-auto">
+												<img src="../assets/img/arrow-left-right.png" alt="" width="20">
+											</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

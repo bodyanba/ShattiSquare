@@ -5,12 +5,6 @@ $(document).ready(function () {
 		$("body").toggleClass("menubar-in");
 	});
 
-	$(".dropdown-link").hover(function() {
-		if (window.matchMedia('(min-width: 992px)').matches) {
-			$(".page-navbar").toggleClass("navbar-bg");
-		};
-	});
-
 	function navbar() {
 		if ($(this).scrollTop() >= $(window).height()/2) {
 			$('.page-navbar').addClass("fixed-top navbar-bg");
@@ -18,8 +12,19 @@ $(document).ready(function () {
 			$('.page-navbar').removeClass("fixed-top navbar-bg");
 		};
 	};
-	navbar();
-	$(window).on("scroll", navbar);
+
+	if ($('.content').hasClass('no-scroll') == false) {
+
+		$(".dropdown-link").hover(function() {
+			if (window.matchMedia('(min-width: 992px)').matches) {
+				$(".page-navbar").toggleClass("navbar-bg");
+			};
+		});
+
+		navbar();
+		$(window).on("scroll", navbar);
+
+	};
 
 	function easyParallax() {
 		scrollPos = $(this).scrollTop();
