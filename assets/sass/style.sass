@@ -69,7 +69,10 @@ a
 		font-size: 33px !important
 	@media (max-width: 575.98px)
 		font-size: 25px !important
+.fz-24-1
+	font-size: 20px
 .fz-24
+	font-size: 1rem
 	@media (min-width: 992px)
 		font-size: 20px
 	@media (min-width: 1200px)
@@ -82,6 +85,8 @@ a
 .fz-18
 	@media (min-width: 1200px)
 		font-size: 18px
+.fz-14
+	font-size: 14px
 .fz-12
 	font-size: 12px
 
@@ -154,24 +159,67 @@ a
 .content
 	overflow: hidden
 
-.form-control 
-	border: 0
+.form-group
+	@media (min-width: 992px)
+		margin-bottom: 28px
+
+.form-control
 	border-radius: 0
 	height: auto
-	padding: 13px 
-	padding-left: 24px
+	padding: 13px 24px
 	color: $color-body
 	font-size: inherit
-	background: transparent
+	border: 1px solid $color-btn2 !important
+	background-color: transparent !important
+	-moz-appearance: none
+	-ms-appearance: none
+	-webkit-appearance: none
+	appearance: none
+	&:focus
+		box-shadow: 0 0 0 0.2rem rgba(150, 106, 80, .25)
 	&::-webkit-input-placeholder
 		color: $color-body
 	&::-moz-placeholder
 		color: $color-body
 	&:-ms-input-placeholder
 		color: $color-body
-	&:focus
-		background: transparent
-		box-shadow: 0 0 0 0.2rem rgba(150,106,80,.25)
+
+select.form-control
+	display: block !important
+	padding-right: 38px
+	background-image: url(../img/arrow-select.png)
+	background-position: calc(100% - 15px) center
+	background-repeat: no-repeat
+	background-size: 9px
+
+textarea.form-control 
+	min-height: 150px
+
+.radio-group 
+	display: block
+	text-align: center
+	margin-bottom: 1rem
+	span
+		display: block
+		min-width: 182px
+		color: $color-btn
+		padding: 12px
+		border: 2px solid $color-btn
+		transition: $transition
+		cursor: pointer
+		&:hover
+			color: #fff
+			border-color: $color-link
+			background-color: $color-link
+	input
+		display: none
+		&:checked ~ span
+			color: #fff
+			border-color: $color-btn
+			background-color: $color-btn
+	&.radio-group-2
+		span 
+			min-width: 50px
 
 .row-1
 	margin-left: -2.5px
@@ -394,10 +442,23 @@ a
 	justify-content: center
 	position: relative
 	overflow: hidden
-	box-shadow: -8.7px 5px 15px 0 rgba(0, 0, 0, .35)
+	background-size: cover
+	background-position: center center
+	&:not([class*="header-"])
+		box-shadow: -8.7px 5px 15px 0 rgba(0, 0, 0, .35)
 	.container 
 		position: relative
 		padding-top: 65px
+
+.header-1 
+	height: 66vh
+	.container
+		padding-top: 31px
+.header-2
+	@media (min-width: 576px)
+		height: 66vh
+.header-3
+	height: 40vh
 
 .section-1
 	padding-top: 1px
@@ -538,11 +599,10 @@ a
 	line-height: 1.25
 	background-color: $color-body
 	.form-control 
-		background: $color-bg
-		padding-left: 13px
-		&:focus
-			background: #fff
-			box-shadow: none
+		padding: 13px
+		border: none !important
+		background-color: $color-bg !important
+		box-shadow: none !important
 
 .figure 
 	border-width: 13px
@@ -736,17 +796,6 @@ a
 
 
 // intercontinental
-		
-.header-1 
-	box-shadow: none
-	height: 66vh
-	.container
-		padding-top: 31px
-
-.header-2
-	box-shadow: none
-	@media (min-width: 576px)
-		height: 66vh
 
 .h1-1 
 	@media (max-width: 575.98px)
@@ -758,7 +807,6 @@ a
 		line-height: inherit
 	@media (max-width: 575.98px)
 		font-size: 14px !important
-		line-height: inherit
 
 .section-4
 	padding-bottom: 102px
@@ -885,7 +933,7 @@ a
 	50%
 		width: 3%
 
-.owl-1
+.owl-carousel
 	&.owl-theme
 		.owl-dots
 			margin-top: 42px !important
@@ -899,16 +947,6 @@ a
 
 .owl-2
 	margin-top: -90px
-	&.owl-theme
-		.owl-dots
-			margin-top: 42px !important
-			.owl-dot 
-				span
-					background: $color-btn2
-					transition: $transition
-				&.active, &:hover
-					span
-						background: $color-btn
 	&:after 
 		content: 'LIFESTYLE BY DESIGN'
 		position: absolute
@@ -927,72 +965,12 @@ a
 		@media (max-width: 575.98px)
 			font-size: 28px 
 
-
 // register
-
-.header-3
-	height: 40vh
-	padding-bottom: 16px
-	.container
-		min-height: auto
-		padding-top: 42px
-		@media (max-width: 767.98px)
-			padding-top: 20px
 
 .section-5
 	padding-top: 84px
-	font-size: 14px
 	@media (max-width: 991.98px)
 		padding-top: 42px
-
-.form-group
-	border: 1px solid $color-btn2
-	&.form-group-1
-		margin-bottom: 28px
-
-select.form-control
-	display: block !important
-	border: 1px solid $color-btn2
-	padding-right: 36px
-	-moz-appearance: none
-	-ms-appearance: none
-	-webkit-appearance: none
-	appearance: none
-	background-image: url(../img/arrow-select.png)
-	background-position: calc(100% - 15px) 50%
-	background-repeat: no-repeat
-	background-size: 9px
-	@media (max-width: 991.98px)
-		margin-bottom: 28px
-	&:focus
-		border: 1px solid $color-btn2
-
-textarea.form-control 
-	min-height: 150px
-
-.radio-group 
-	display: block
-	text-align: center
-	span
-		display: block
-		min-width: 182px
-		color: $color-btn
-		padding: 12px !important
-		border: 2px solid $color-btn
-		transition: $transition
-		cursor: pointer
-		&:hover
-			background: $color-link
-			border-color: $color-link
-	input
-		display: none
-		&:checked ~ span
-			background: $color-btn
-			color: #fff
-
-.mw-50
-	min-width: 50px !important
-
 
 // web-story
 
@@ -1049,7 +1027,7 @@ textarea.form-control
 				font-size: 14px
 
 .poem 
-	font-family: 'Times New Roman', sans-serif
+	font-family: 'Times New Roman', 'Almarai', sans-serif
 	background: $color-body
 	color: $color-bg
 	padding: 100px 15px

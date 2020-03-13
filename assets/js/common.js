@@ -60,11 +60,6 @@ $(document).ready(function () {
     loop: true,
     margin: 30,
     autoplay: true,
-    responsive: {
-      600: {
-      	items: 1
-			}
-		}
 	});
 
 });
