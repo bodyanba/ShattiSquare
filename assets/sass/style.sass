@@ -480,6 +480,9 @@ textarea.form-control
 		height: 66vh
 .header-3
 	height: 40vh
+.header-4
+	.container
+		padding-top: 0
 
 .section-1
 	padding-top: 1px
@@ -490,6 +493,7 @@ textarea.form-control
 	background-color: $color-body
 	@media (max-width: 991.98px)
 		padding-bottom: 90px
+
 .iconbox-1
 	.iconbox-icon-container
 		display: block
@@ -613,6 +617,7 @@ textarea.form-control
 		width: 0
 
 .section-4
+	margin-top: -66px
 	padding-bottom: 102px
 	@media (max-width: 991.98px)
 		padding-bottom: 90px
@@ -622,7 +627,6 @@ textarea.form-control
 	position: relative
 	padding: 154px 15px
 	text-transform: uppercase
-	margin-top: -66px
 	margin-bottom: 30px
 	overflow: hidden
 	@media (max-width: 767.98px)
@@ -632,9 +636,14 @@ textarea.form-control
 .section-5
 	padding-top: 84px
 	iframe 
+		display: block
 		width: 100%
 		height: 700px
 		border: 0
+		@media (max-width: 991.98px)
+			height: 500px
+		@media (max-width: 575.98px)
+			height: 300px
 
 .section-6
 	padding-top: 127px
@@ -813,17 +822,10 @@ textarea.form-control
 
 
 
-.h1-2
-	@media (max-width: 991.98px)
-		font-size: 20px !important
-		line-height: inherit
-	@media (max-width: 575.98px)
-		font-size: 14px !important
 
-.owl-2
-	margin-top: -90px
-	&:after 
-		content: 'LIFESTYLE BY DESIGN'
+.lifestyle
+	position: relative
+	> span
 		position: absolute
 		top: 50%
 		left: -20%
@@ -831,6 +833,7 @@ textarea.form-control
 		font-size: 120px 
 		color: $color-btn
 		pointer-events: none
+		z-index: 1
 		@media (max-width: 1199.98px)
 			font-size: 90px 
 		@media (max-width: 991.98px)
