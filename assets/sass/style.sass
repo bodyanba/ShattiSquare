@@ -684,6 +684,35 @@ textarea.form-control
 	@media (min-width: 1200px) and (max-width: 1299.98px)
 		font-size: 14px
 
+.lifestyle
+	position: relative
+	> span
+		position: absolute
+		top: 50%
+		left: -20%
+		right: -20%
+		font-size: 120px 
+		color: $color-btn
+		pointer-events: none
+		z-index: 1
+		@media (max-width: 1199.98px)
+			font-size: 90px 
+		@media (max-width: 991.98px)
+			font-size: 68px 
+		@media (max-width: 767.98px)
+			font-size: 50px 
+		@media (max-width: 575.98px)
+			font-size: 28px
+
+.poem 
+	font-family: 'Times New Roman', 'Almarai', sans-serif
+	background: $color-body
+	color: $color-bg
+	padding: 100px 15px
+	margin-bottom: 126px
+	@media (max-width: 575.98px)
+		margin-bottom: 90px
+
 .page-footer
 	color: #fff
 	font-size: 13px
@@ -815,41 +844,5 @@ textarea.form-control
 @keyframes height-6
 	50%
 		width: 3%
-
-
-
-
-
-
-
-
-.lifestyle
-	position: relative
-	> span
-		position: absolute
-		top: 50%
-		left: -20%
-		right: -20%
-		font-size: 120px 
-		color: $color-btn
-		pointer-events: none
-		z-index: 1
-		@media (max-width: 1199.98px)
-			font-size: 90px 
-		@media (max-width: 991.98px)
-			font-size: 68px 
-		@media (max-width: 767.98px)
-			font-size: 50px 
-		@media (max-width: 575.98px)
-			font-size: 28px
-
-.poem 
-	font-family: 'Times New Roman', 'Almarai', sans-serif
-	background: $color-body
-	color: $color-bg
-	padding: 100px 15px
-	margin-bottom: 126px
-	@media (max-width: 575.98px)
-		margin-bottom: 90px
 
 @import theme

@@ -727,6 +727,40 @@ textarea.form-control {
   .section-7 {
     font-size: 14px; } }
 
+.lifestyle {
+  position: relative; }
+  .lifestyle > span {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    right: -20%;
+    font-size: 120px;
+    color: #966a50;
+    pointer-events: none;
+    z-index: 1; }
+    @media (max-width: 1199.98px) {
+      .lifestyle > span {
+        font-size: 90px; } }
+    @media (max-width: 991.98px) {
+      .lifestyle > span {
+        font-size: 68px; } }
+    @media (max-width: 767.98px) {
+      .lifestyle > span {
+        font-size: 50px; } }
+    @media (max-width: 575.98px) {
+      .lifestyle > span {
+        font-size: 28px; } }
+
+.poem {
+  font-family: "Times New Roman", "Almarai", sans-serif;
+  background: #554645;
+  color: #f4f0ed;
+  padding: 100px 15px;
+  margin-bottom: 126px; }
+  @media (max-width: 575.98px) {
+    .poem {
+      margin-bottom: 90px; } }
+
 .page-footer {
   color: #fff;
   font-size: 13px;
@@ -854,40 +888,6 @@ textarea.form-control {
 @keyframes height-6 {
   50% {
     width: 3%; } }
-.lifestyle {
-  position: relative; }
-  .lifestyle > span {
-    position: absolute;
-    top: 50%;
-    left: -20%;
-    right: -20%;
-    font-size: 120px;
-    color: #966a50;
-    pointer-events: none;
-    z-index: 1; }
-    @media (max-width: 1199.98px) {
-      .lifestyle > span {
-        font-size: 90px; } }
-    @media (max-width: 991.98px) {
-      .lifestyle > span {
-        font-size: 68px; } }
-    @media (max-width: 767.98px) {
-      .lifestyle > span {
-        font-size: 50px; } }
-    @media (max-width: 575.98px) {
-      .lifestyle > span {
-        font-size: 28px; } }
-
-.poem {
-  font-family: "Times New Roman", "Almarai", sans-serif;
-  background: #554645;
-  color: #f4f0ed;
-  padding: 100px 15px;
-  margin-bottom: 126px; }
-  @media (max-width: 575.98px) {
-    .poem {
-      margin-bottom: 90px; } }
-
 .row-bg-loader {
   position: absolute;
   top: 0;
