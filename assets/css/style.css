@@ -527,7 +527,7 @@ textarea.form-control {
     .section-1 {
       padding-bottom: 90px; } }
 
-.iconbox-1 .iconbox-icon-container {
+.iconbox .iconbox-icon-container {
   display: block;
   width: 1560px;
   padding-left: 30px;
@@ -536,34 +536,45 @@ textarea.form-control {
   left: 50%;
   transform: translateX(-50%); }
   @media (max-width: 1199.98px) {
-    .iconbox-1 .iconbox-icon-container {
+    .iconbox .iconbox-icon-container {
       width: 1160px; } }
   @media (max-width: 991.98px) {
-    .iconbox-1 .iconbox-icon-container {
+    .iconbox .iconbox-icon-container {
       width: 860px; } }
   @media (max-width: 379.98px) {
-    .iconbox-1 .iconbox-icon-container {
+    .iconbox .iconbox-icon-container {
       width: 660px; } }
-  .iconbox-1 .iconbox-icon-container > svg {
+  .iconbox .iconbox-icon-container > svg {
     width: 100%;
     height: auto; }
 
-.iconbox-2 {
+.iconbox-1 {
   margin-top: -265px;
   margin-bottom: 74px; }
   @media (max-width: 1199.98px) {
-    .iconbox-2 {
+    .iconbox-1 {
       margin-top: -180px; } }
   @media (max-width: 991.98px) {
-    .iconbox-2 {
+    .iconbox-1 {
       margin-top: -130px;
       margin-bottom: 50px; } }
   @media (max-width: 369.98px) {
-    .iconbox-2 {
+    .iconbox-1 {
       margin-top: -100px; } }
 
-.iconbox-3 {
+.iconbox-2 {
   margin-top: 50px; }
+
+.iconbox-3 .iconbox-icon-container {
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding-left: 0;
+  padding-right: 0; }
+  .iconbox-3 .iconbox-icon-container > svg {
+    width: auto;
+    height: 100%; }
 
 .section-2 .row {
   align-items: center;
