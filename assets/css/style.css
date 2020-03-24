@@ -786,8 +786,7 @@ textarea.form-control {
     box-shadow: none !important; }
 
 .figure {
-  border-width: 13px;
-  color: #f3efec;
+  border-width: 7px;
   position: absolute;
   pointer-events: none;
   animation-timing-function: linear;
@@ -811,94 +810,100 @@ textarea.form-control {
   transform: translate(50%);
   top: 0;
   bottom: 0; }
-  .figure-wrap .figure {
-    border-width: 7px; }
-    .figure-wrap .figure-1 {
-      width: 24.8%;
-      height: 73%;
-      left: 18.5%;
-      top: 27%;
-      border-top-style: solid;
-      border-right-style: solid;
-      animation-name: height-1;
-      animation-duration: 3s; }
-    .figure-wrap .figure-2 {
-      height: 18%;
-      left: 18.5%;
-      bottom: 72%;
-      border-right-style: solid;
-      animation-name: height-2;
-      animation-duration: 3s; }
-    .figure-wrap .figure-3 {
-      width: 31.8%;
-      right: 57%;
-      bottom: 18%;
-      border-top-style: solid;
-      animation-name: height-3;
-      animation-duration: 3s; }
-    .figure-wrap .figure-4 {
-      width: 18%;
-      left: 18.5%;
-      bottom: 45%;
-      border-top-style: solid; }
-    .figure-wrap .figure-5 {
-      height: 90%;
-      left: 51%;
-      bottom: 0;
-      top: 11%;
-      border-right-style: solid;
-      animation-name: height-4;
-      animation-duration: 3s; }
-    .figure-wrap .figure-6 {
-      height: 24%;
-      left: 62%;
-      top: 76%;
-      border-right-style: solid;
-      animation-name: height-5;
-      animation-duration: 3s; }
-    .figure-wrap .figure-7 {
-      width: 14%;
-      height: 28%;
-      right: 30%;
-      bottom: 21%;
-      border-top-style: solid;
-      border-right-style: solid; }
-    .figure-wrap .figure-8 {
-      width: 10%;
-      height: 19%;
-      left: 78%;
-      bottom: 47%;
-      border-bottom-style: solid;
-      border-left-style: solid;
-      animation-name: height-6;
-      animation-duration: 3s; }
-    .figure-wrap .figure-9 {
-      width: 10%;
-      left: 78%;
-      bottom: 21%;
-      border-top-style: solid;
-      animation-name: height-6;
-      animation-duration: 3s; }
+  .figure-wrap .figure-1 {
+    width: 24.8%;
+    top: 27%;
+    bottom: 0;
+    left: 18.5%;
+    border-top-style: solid;
+    border-right-style: solid;
+    animation-name: figure-1;
+    animation-duration: 3s; }
+  .figure-wrap .figure-2 {
+    height: 17%;
+    bottom: 73%;
+    left: 18.5%;
+    border-right-style: solid;
+    animation-name: figure-2;
+    animation-duration: 4s; }
+  .figure-wrap .figure-3 {
+    width: 43%;
+    bottom: 18%;
+    left: 0;
+    border-top-style: solid; }
+  .figure-wrap .figure-4 {
+    right: 63.5%;
+    bottom: 45%;
+    left: 18.5%;
+    border-top-style: solid;
+    animation-name: figure-4;
+    animation-duration: 3s; }
+  .figure-wrap .figure-5 {
+    height: 89%;
+    bottom: 0;
+    left: 51%;
+    border-right-style: solid;
+    animation-name: figure-5;
+    animation-duration: 5s; }
+  .figure-wrap .figure-6 {
+    height: 24%;
+    bottom: 0;
+    left: 62%;
+    border-right-style: solid;
+    animation-name: figure-6;
+    animation-duration: 6s; }
+  .figure-wrap .figure-7 {
+    width: 14%;
+    top: 51%;
+    right: 30%;
+    bottom: 21%;
+    border-top-style: solid;
+    border-right-style: solid;
+    animation-name: figure-7;
+    animation-duration: 8s; }
+  .figure-wrap .figure-8 {
+    width: 22%;
+    height: 19%;
+    right: 0;
+    bottom: 47%;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    animation-name: figure-8;
+    animation-duration: 6.5s; }
+  .figure-wrap .figure-9 {
+    width: 22%;
+    right: 0;
+    bottom: 21%;
+    border-top-style: solid;
+    animation-name: figure-9;
+    animation-duration: 5.5s; }
 
-@keyframes height-1 {
+@keyframes figure-1 {
   50% {
-    height: 60%; } }
-@keyframes height-2 {
+    bottom: 8%; } }
+@keyframes figure-2 {
   50% {
-    height: 7%; } }
-@keyframes height-3 {
+    height: 10%; } }
+@keyframes figure-4 {
   50% {
-    width: 24.5%; } }
-@keyframes height-4 {
+    right: 62%;
+    left: 16%; } }
+@keyframes figure-5 {
   50% {
-    top: 20%;
-    height: 67%; } }
-@keyframes height-5 {
+    height: 100%; } }
+@keyframes figure-6 {
   50% {
     height: 12%; } }
-@keyframes height-6 {
+@keyframes figure-7 {
   50% {
-    width: 3%; } }
+    width: 8%;
+    bottom: 12%; } }
+@keyframes figure-8 {
+  50% {
+    height: 30%; } }
+@keyframes figure-9 {
+  50% {
+    width: 17%; } }
 .row-bg-loader {
   position: absolute;
   top: 0;

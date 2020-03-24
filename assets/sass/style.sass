@@ -738,8 +738,7 @@ textarea.form-control
 		box-shadow: none !important
 
 .figure 
-	border-width: 13px
-	color: #f3efec
+	border-width: 7px
 	position: absolute
 	pointer-events: none
 	animation-timing-function: linear 
@@ -763,97 +762,106 @@ textarea.form-control
 	top: 0
 	bottom: 0
 	.figure
-		border-width: 7px
 		&-1
 			width: 24.8%
-			height: 73%
-			left: 18.5%
 			top: 27%
+			bottom: 0
+			left: 18.5%
 			border-top-style: solid
 			border-right-style: solid
-			animation-name: height-1
+			animation-name: figure-1
 			animation-duration: 3s
 		&-2
-			height: 18%
+			height: 17%
+			bottom: 73%
 			left: 18.5%
-			bottom: 72%
 			border-right-style: solid
-			animation-name: height-2
-			animation-duration: 3s
+			animation-name: figure-2
+			animation-duration: 4s
 		&-3
-			width: 31.8%
-			right: 57%
+			width: 43%
 			bottom: 18%
+			left: 0
 			border-top-style: solid
-			animation-name: height-3
-			animation-duration: 3s
 		&-4
-			width: 18%
-			left: 18.5%
+			right: 63.5%
 			bottom: 45%
-			border-top-style: solid				
+			left: 18.5%
+			border-top-style: solid	
+			animation-name: figure-4
+			animation-duration: 3s			
 		&-5
-			height: 90%
-			left: 51%
+			height: 89%
 			bottom: 0
-			top: 11%
+			left: 51%
 			border-right-style: solid
-			animation-name: height-4
-			animation-duration: 3s
+			animation-name: figure-5
+			animation-duration: 5s
 		&-6
 			height: 24%
+			bottom: 0
 			left: 62%
-			top: 76%
 			border-right-style: solid
-			animation-name: height-5
-			animation-duration: 3s
+			animation-name: figure-6
+			animation-duration: 6s
 		&-7
 			width: 14%
-			height: 28%
+			top: 51%
 			right: 30%
 			bottom: 21%
 			border-top-style: solid
 			border-right-style: solid
+			animation-name: figure-7
+			animation-duration: 8s
 		&-8
-			width: 10%
+			width: 22%
 			height: 19%
-			left: 78%
+			right: 0
 			bottom: 47%
 			border-bottom-style: solid
 			border-left-style: solid
-			animation-name: height-6
-			animation-duration: 3s
+			animation-name: figure-8
+			animation-duration: 6.5s
 		&-9
-			width: 10%
-			left: 78%
+			width: 22%
+			right: 0
 			bottom: 21%
 			border-top-style: solid	
-			animation-name: height-6
-			animation-duration: 3s	
+			animation-name: figure-9
+			animation-duration: 5.5s
 
-@keyframes height-1
+@keyframes figure-1
 	50%
-		height: 60%
+		bottom: 8%
 
-@keyframes height-2
+@keyframes figure-2
 	50%
-		height: 7%
+		height: 10%
 
-@keyframes height-3
+@keyframes figure-4
 	50%
-		width: 24.5%
+		right: 62%
+		left: 16%
 
-@keyframes height-4
+@keyframes figure-5
 	50%
-		top: 20%
-		height: 67%
+		height: 100%
 
-@keyframes height-5
+@keyframes figure-6
 	50%
 		height: 12%
 
-@keyframes height-6
+@keyframes figure-7
 	50%
-		width: 3%
+		width: 8%
+		bottom: 12%
+
+@keyframes figure-8
+	50%
+		height: 30%
+
+@keyframes figure-9
+	50%
+		width: 17%
 
 @import theme
