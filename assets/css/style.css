@@ -688,16 +688,13 @@ textarea.form-control {
 
 .section-5 {
   padding-top: 84px; }
-  .section-5 iframe {
-    display: block;
-    width: 100%;
-    height: 700px;
-    border: 0; }
+  .section-5 .iframe {
+    height: 700px; }
     @media (max-width: 991.98px) {
-      .section-5 iframe {
+      .section-5 .iframe {
         height: 500px; } }
     @media (max-width: 575.98px) {
-      .section-5 iframe {
+      .section-5 .iframe {
         height: 300px; } }
 
 .section-6 {
@@ -739,7 +736,8 @@ textarea.form-control {
     font-size: 14px; } }
 
 .lifestyle {
-  position: relative; }
+  position: relative;
+  text-transform: uppercase; }
   .lifestyle > span {
     position: absolute;
     top: 50%;
@@ -904,6 +902,9 @@ textarea.form-control {
 @keyframes figure-9 {
   50% {
     width: 17%; } }
+span[data-jarallax-element] {
+  display: inline-block; }
+
 .row-bg-loader {
   position: absolute;
   top: 0;
@@ -1055,5 +1056,36 @@ textarea.form-control {
 
 .ui-selectmenu-button, .ui-selectmenu-menu {
   display: none; }
+
+.map_marker {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50em;
+  background-color: #cda1a6; }
+  .map_marker > div {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50em;
+    opacity: 1;
+    background-color: #cda1a6;
+    animation: markerWave 1.5s 0.45s cubic-bezier(0, 0, 0.2, 1) infinite forwards; }
+    .map_marker > div:first-child {
+      animation: markerWave 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite forwards; }
+
+@keyframes markerWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.8; }
+  20% {
+    opacity: 0.8; }
+  100% {
+    transform: scale(5.5);
+    opacity: 0; } }
 
 /*# sourceMappingURL=style.css.map */

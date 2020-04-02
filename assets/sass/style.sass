@@ -129,7 +129,7 @@ a
 	&-maroon 
 		color: #fff !important
 		padding: 15.5px 22px
-		background-color: #cda1a6
+		background-color: $color-maroon
 		&:hover
 			background-color: $color-link
 	&-white
@@ -646,11 +646,8 @@ textarea.form-control
 
 .section-5
 	padding-top: 84px
-	iframe 
-		display: block
-		width: 100%
+	.iframe
 		height: 700px
-		border: 0
 		@media (max-width: 991.98px)
 			height: 500px
 		@media (max-width: 575.98px)
@@ -697,6 +694,7 @@ textarea.form-control
 
 .lifestyle
 	position: relative
+	text-transform: uppercase
 	> span
 		position: absolute
 		top: 50%
@@ -863,5 +861,8 @@ textarea.form-control
 @keyframes figure-9
 	50%
 		width: 17%
+
+span[data-jarallax-element]
+	display: inline-block
 
 @import theme

@@ -150,4 +150,37 @@
 
 .ui-selectmenu-button, .ui-selectmenu-menu
 	display: none
+
+.map_marker
+	position: absolute
+	width: 18px
+	height: 18px
+	border-radius: 50em
+	background-color: $color-maroon
+	> div
+		content: ''
+		display: inline-block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		border-radius: 50em
+		opacity: 1
+		background-color: $color-maroon
+		animation: markerWave 1.5s .45s cubic-bezier(0,0,.2,1) infinite forwards
+		&:first-child
+			animation: markerWave 1.5s cubic-bezier(.4,0,.2,1) infinite forwards
+
+@keyframes markerWave
+	0%
+		transform: scale(1)
+		opacity: .8
+	20%
+		opacity: .8
+	100%
+		transform: scale(5.5)
+		opacity: 0
+
+
 	
