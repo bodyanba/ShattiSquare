@@ -22,6 +22,9 @@ img
 	max-width: 100%
 	height: auto
 
+figure 
+	margin: 0
+
 hr 
 	border-top-color: $color-btn
 .hr 
@@ -196,10 +199,10 @@ a
 select.form-control
 	display: block !important
 	padding-right: 38px
-	background-image: url(../img/arrow-select.png)
+	background-image: url(../img/arrow-select.svg)
 	background-position: calc(100% - 15px) center
 	background-repeat: no-repeat
-	background-size: 9px
+	background-size: 10px
 
 textarea.form-control 
 	min-height: 150px
@@ -465,8 +468,8 @@ textarea.form-control
 	overflow: hidden
 	background-size: cover
 	background-position: center center
-	&:not([class*="header-"])
-		box-shadow: -8.7px 5px 15px 0 rgba(0, 0, 0, .35)
+	// &:not([class*="header-"])
+	// 	box-shadow: -8.7px 5px 15px 0 rgba(0, 0, 0, .35)
 	.container 
 		position: relative
 		padding-top: 65px
@@ -487,10 +490,8 @@ textarea.form-control
 .section-1
 	padding-top: 1px
 	padding-bottom: 170px
-	color: #fff
 	text-align: center
 	text-transform: uppercase
-	background-color: $color-body
 	@media (max-width: 991.98px)
 		padding-bottom: 90px
 
@@ -498,8 +499,7 @@ textarea.form-control
 	.iconbox-icon-container
 		display: block
 		width: 1560px
-		padding-left: 30px
-		padding-right: 30px
+		padding: 0 30px
 		position: relative
 		left: 50%
 		transform: translateX(-50%)
@@ -512,6 +512,19 @@ textarea.form-control
 		> svg 
 			width: 100%
 			height: auto
+		.img 
+			position: absolute
+			width: 14%
+			z-index: -1
+			&.img-1 
+				right: 31%
+				bottom: 1.7%
+			&.img-2
+				right: 48.5%
+				bottom: 14%
+			&.img-3
+				right: 14%
+				bottom: 41%
 .iconbox-1
 	margin-top: -265px
 	margin-bottom: 74px
@@ -540,12 +553,18 @@ textarea.form-control
 	.row
 		align-items: center
 		margin: 0
-		&:nth-child(odd)
+		&:nth-child(1)
 			background-color: #fff
+		&:nth-child(2)
+			background-color: $color-bg-2
+		&:nth-child(3)
+			background-color: $color-body
+			h2:after 
+				border-top-color: $color-btn
 		&:nth-child(even)
-			color: #fff	
-			background-color: $color-btn
 			flex-direction: row-reverse
+		+ .row 
+			color: #fff	
 			* 
 				color: inherit !important
 			.img-link:hover
@@ -743,13 +762,13 @@ textarea.form-control
 	animation-iteration-count: infinite
 
 .bg-1
-	background-color: #7ba6ad
+	background-color: $color-bg-1
 	.figure 
-		color: #87adb3
+		color: $color-f-1
 .bg-2
-	background: #b9c2b8
+	background-color: $color-bg-2
 	.figure
-		color: #bfc7bd
+		color: $color-f-2
 
 .figure-wrap
 	pointer-events: none
